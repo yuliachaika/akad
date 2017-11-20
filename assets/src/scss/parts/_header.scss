@@ -1,0 +1,49 @@
+.hero {
+	padding: rem(15) 0; 
+	width: 100%;
+	height: 100vh;
+	@include bg('../../img/layer-4.png');
+	background-attachment: fixed;
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $gray;
+		opacity: 0.5;
+    z-index: -1;
+	}
+	&__nav {
+		padding-left: 0; 
+		padding-right: 0; 
+	}
+	&__menu {
+		transition: all .3s ease; 
+		&:hover {
+			opacity: .4; 
+		}
+	}
+	&__logo {
+		height: rem(20); 
+		&-link {
+			color: $gray;
+			font-family: 'Montserrat', sans-serif;
+			font-size: rem(18);
+			font-weight: 700;
+			line-height: rem(48);
+			text-transform: uppercase;
+		}
+	}
+	&__title {
+		margin: 0; 
+		@include title(36);
+	}
+	&__text {
+		@include title(14);
+	}
+}

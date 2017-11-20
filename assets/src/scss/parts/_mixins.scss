@@ -1,0 +1,14 @@
+/* ---functions--- */
+
+@function rem($pixels, $context: 16) {
+	@return #{$pixels/$context}rem;
+}
+
+/* ---bg--- */
+
+@mixin bg($url) {
+	background-image: url($url); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="shortcut icon" href="assets/img/layer-13.png">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/dist/css/style.css">
+	<script src="assets/components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+	<header class="hero" id="home">
+		<div class="container hero__container d-flex flex-column justify-content-between">
+			<nav class="hero__nav navbar navbar-dark">
+				<a href="index.html" class="hero__logo-link navbar-brand">akad.</a>
+				<button class="hero__menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon hero__icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">about us</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">services</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link active">contact us</a>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+			<!-- .hero__nav -->
+
+			<div class="hero__info d-flex flex-column justify-content-center align-items-center">
+				<h1 class="hero__title">contact us</h1>
+				<p class="hero__text">home / contact</p>
+			</div>
+			<div class="w-100"></div>
+		</div>
+		<!-- .container -->
+	</header>
+	<!-- .hero -->
+	
+	<main>
+		<section class="contacts">
+			<div class="container">
+				<div class="row ">
+					<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
+						<!-- left column begins -->
+						<form id="needs-validation" novalidate>
+							<div class="row">
+								<div class="col-sm-12 col-md-6 mb-3">
+									<input type="text" class="rounded-0 form-control form__input form__input--color"  placeholder="your name" required>
+									<div class="invalid-feedback">
+										Please provide your name.
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 mb-3">
+									<input type="email" class="rounded-0 form-control form__input form__input--color"  placeholder="your email" required>
+									<div class="invalid-feedback">
+										Please provide a valid email address.
+									</div>
+								</div>
+							</div>
+							<div class="row pt-3 pb-3">
+								<div class="col-md-12">
+									<input type="text" class="rounded-0 form-control form__input form__input--color"  placeholder="object">
+								</div>
+							</div>
+							<div class="row pt-3 pb-3">
+								<div class="col-md-12">
+									<textarea class="rounded-0 form-control form__area" rows="4" placeholder="message"></textarea>
+								</div>
+							</div>
+							<div class="row pt-3">
+								<div class="col-md-12">
+									<button type="submit" class="form__btn">send</button>
+								</div>
+							</div>
+
+						</form>
+						<!-- form -->
+
+						<div class="contacts__info">
+							<h3 class="contacts__title">
+								CONTACT INFO
+							</h3>
+							<p class="contacts__text">Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia dolorum conse.</p>
+							<p class="contacts__text mb-0">13D, Functional apartment, Unique colony,  <br>Agadir 86360  <br>+212 124-566-780  <br>+212 124-566-780 </p>
+							<a href="mailto:email@website.com" class="contacts__text--link">email@website.com</a>
+							<ul class="list-unstyled mb-0 pt-3">
+								<li class="footer-social__item list-inline-item">
+									<a class="footer-social__link" href="#">
+										<i class="icon ion-social-facebook"></i>
+									</a>
+								</li>
+								<li class="footer-social__item list-inline-item">
+									<a class="footer-social__link" href="#">
+										<i class="icon ion-social-twitter"></i>
+									</a>
+								</li>
+								<li class="footer-social__item list-inline-item">
+									<a class="footer-social__link" href="#">
+										<i class="icon ion-social-youtube"></i>
+									</a>
+								</li>
+								<li class="footer-social__item list-inline-item">
+									<a class="footer-social__link" href="#">
+										<i class="icon ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li class="footer-social__item list-inline-item">
+									<a class="footer-social__link" href="#">
+										<i class="icon ion-social-pinterest"></i>
+									</a>
+								</li>
+								<li class="footer-social__item list-inline-item">
+									<a class="footer-social__link" href="#">
+										<i class="icon ion-social-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- left column ends -->
+
+
+					<div class="col-xs-12 col-sm-6">
+						<!-- right column begins -->
+						<div class="contacts__wrap">
+							<div id="map" class="contacts__map"></div>
+						</div>
+						
+					</div>
+					<!-- right column ends -->
+				</div>
+			</div>
+			<!-- .container -->
+		</section>
+		<!-- .contacts -->
+
+
+		<section class="form">
+			<div class="container">
+				<div class="row mr-0">
+					<div class="col-sm-12 col-md-6">
+						<p class="form__text">
+							YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
+						</p>
+						<a class="form__btn form__btn--white" href="#" role="button">get in touch</a>
+					</div>
+					<!-- left-column -->
+
+					<div class="col-sm-12 col-md-6 p-3">
+						<div class="form__wrapper">
+							<h3 class="form__title">
+								STAY INFORMED WITH OUR NEWSLETTER
+							</h3>
+							<p class="form__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<form class="form__item d-flex">
+								<input class="form-control form__input form__input--left rounded-0" type="email" placeholder="your email">
+								<button type="submit" class="form__btn">Submit</button>
+							</form>
+						</div>
+					</div>
+					<!-- right-column -->
+				</div>
+			</div>
+			<!-- .container -->
+		</section>
+		<!-- form -->
+	</main>
+	<!-- main -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8">
+					<ul class="footer-nav list-unstyled list-inline text-uppercase">
+						<li class="footer-item nav-item list-inline-item">
+							<a href="index.html" class="footer-item__link nav-link">home</a>
+						</li>
+						<li class="footer-item nav-item list-inline-item">
+							<a href="index.html" class="footer-item__link nav-link">about us</a>
+						</li>
+						<li class="footer-item nav-item list-inline-item">
+							<a href="#" class="footer-item__link nav-link">services</a>
+						</li>
+						<li class="footer-item nav-item list-inline-item">
+							<a href="#" class="footer-item__link nav-link">portfolio</a>
+						</li>
+						<li class="footer-item nav-item list-inline-item">
+							<a href="#" class="footer-item__link nav-link">blog</a>
+						</li>
+						<li class="footer-item nav-item list-inline-item">
+							<a href="contacts.html" class="footer-item__link nav-link">contact us</a>
+						</li>
+					</ul>
+					
+				</div>
+				<div class="col-sm-12 col-md-4 text-right">
+					<p class="footer__text text-uppercase">
+						Created by akhouad 2016. All Rights Reserved
+					</p>
+					<ul class="list-inline list-unstyled mb-0">
+						<li class="footer-social__item list-inline-item">
+							<a class="footer-social__link" href="#">
+								<i class="icon ion-social-facebook"></i>
+							</a>
+						</li>
+						<li class="footer-social__item list-inline-item">
+							<a class="footer-social__link" href="#">
+								<i class="icon ion-social-twitter"></i>
+							</a>
+						</li>
+						<li class="footer-social__item list-inline-item">
+							<a class="footer-social__link" href="#">
+								<i class="icon ion-social-youtube"></i>
+							</a>
+						</li>
+						<li class="footer-social__item list-inline-item">
+							<a class="footer-social__link" href="#">
+								<i class="icon ion-social-linkedin"></i>
+							</a>
+						</li>
+						<li class="footer-social__item list-inline-item">
+							<a class="footer-social__link" href="#">
+								<i class="icon ion-social-pinterest"></i>
+							</a>
+						</li>
+						<li class="footer-social__item list-inline-item">
+							<a class="footer-social__link" href="#">
+								<i class="icon ion-social-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- .container -->
+	</footer>
+	<!-- footer -->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWL00d4OgxS7nhAFiO8zvKYYhnjIa0gKg&language=en&region=US">
+	</script>
+	</script>
+	<script src="assets/dist/javascript/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+node_modules/
+
+bower\.json
+
+\.bowerrc
+
+\.DS_Store
+
+gulpfile\.js
+
+package-lock\.json
+
+package\.json

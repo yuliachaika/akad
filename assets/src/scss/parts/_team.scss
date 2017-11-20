@@ -1,0 +1,41 @@
+.team {
+	padding: rem(138) 0 0; 
+	&__header {
+		padding-bottom: rem(100); 
+	}
+	&__title {
+		@include title-shadow();
+	}
+	&__text {
+		margin: 0; 
+		@include text(24);
+		}
+	&__item {
+		margin-bottom: rem(30);
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease; 
+    &:hover {
+    	cursor: pointer;
+    	opacity: .7;  
+    }
+	}
+}
+
+.info {
+	&__block {
+		padding: rem(42) rem(30); 
+	}
+	&__text {
+		color: $gray;
+		font-family: 'Open Sans', sans-serif;
+		font-size: rem(18);
+		font-style: italic;
+		line-height: rem(48);
+	}
+	&__btn { 
+		@include btn();
+		min-width: rem(165);
+		padding: 0; 
+	}
+}

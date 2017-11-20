@@ -1,0 +1,38 @@
+.container {
+	max-width: rem(1170); 
+	height: 100%; 
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.navbar {
+	& &-toggler-icon {
+		width: 30px;
+  	height: 15px;
+		background-image: url('../../img/humb.png');
+	}
+	& &-toggler {
+		cursor: pointer;
+		border: none;
+		&:focus {
+			outline: none; 
+		}		
+	}
+	& &-brand {
+		transition: all .3s ease; 
+		color: $gray;
+	}
+	& &-nav {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.5;
+		text-transform: uppercase;
+	}
+}

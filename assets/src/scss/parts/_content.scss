@@ -1,0 +1,74 @@
+.about { 
+	padding: rem(138) 0 0; 
+	&__title {
+		@include title-shadow();
+	}
+	&__subtitle {
+		padding-bottom: rem(10); 
+		color: $gray;
+		font-family: 'Open Sans', sans-serif;
+		font-size: rem(14);
+		font-weight: 800;
+		line-height: rem(24);
+		text-transform: uppercase;
+	}
+	&__text { 
+		@include text(30);
+	}
+}
+
+.benefits {
+	padding: rem(138) 0 0; 
+	&__title {
+		@include title-shadow();
+	}
+	&__text {
+			@include text(24);
+		}
+	&-item {
+		padding-top: rem(80);  
+		&__header {
+			
+		}
+		&__title {
+			padding-left: rem(20); 
+			@include title(18);
+		}
+		&__text {
+			@include text(30);
+		}
+		&__icon {
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-color: $green;
+			color: $white;
+			font-family: Ionicons;
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 40px;
+			text-transform: uppercase;
+			text-align: center;
+			transition: all .4s ease; 
+			&:hover {
+				cursor: pointer;
+				background-color: $white;
+				color: $green;
+				transition: all .4s ease; 
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

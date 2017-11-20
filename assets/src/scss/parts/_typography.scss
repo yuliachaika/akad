@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,800');
+
+@mixin title($px) { 
+	color: $gray;
+	font-family: 'Montserrat', sans-serif;
+	font-size: rem($px);
+	font-weight: 700;
+	line-height: rem(48);
+	text-transform: uppercase;
+}
+@mixin title-shadow() { 
+	@include title(30);
+	display: inline-block;
+	position: relative;
+	z-index: 1; 
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: rem(68);
+		height: rem(21);
+		bottom: rem(4);
+		background-color: $green;
+		z-index: -1;  
+	}
+}
+@mixin text($px) {
+	color: $gray;
+	font-family: 'Open Sans', sans-serif;
+	font-size: rem(14);
+	font-weight: 400;
+	line-height: rem($px);
+}
+
+@mixin btn() {
+	padding: 0 rem(38); 
+	height: rem(50);
+	min-width: rem(135);  
+	display: inline-block;
+	@include title(14);
+	color: $white;
+	background-color: $green;
+	border: 1px solid $green;
+	transition: all .3s linear;
+	text-align: center;
+	&:hover {
+		cursor: pointer;
+		background-color: $white;
+		color: $green;
+	} 
+	&:focus {
+		outline-color: $green; 
+	} 
+}
+
+@mixin btn-white() {
+	padding: 0 rem(38); 
+	display: inline-block;
+	@include title(14);
+	color: $green;
+	background-color: $white;
+	border: 1px solid $white;
+	text-align: center;
+	transition: all .3s linear;
+	&:hover {
+		cursor: pointer;
+		background-color: $green;
+		color: $white;
+	} 
+	&:focus {
+		outline-color: $green; 
+	} 
+}
+
+

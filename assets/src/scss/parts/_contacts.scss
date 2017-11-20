@@ -1,0 +1,22 @@
+.contacts {
+	padding: rem(150) 0;
+	&__title {
+		@include title(18);
+	}
+	&__text {
+		@include text(30);
+		color: $light-gray-2;
+		&--link {
+			color: $light-gray-2;
+			font-weight: 700;
+			transition: all .3s ease;
+			&:hover {
+				cursor: pointer;
+				color: $green;
+			} 
+		} 
+	} 
+	&__map {
+		height: rem(840); 
+	}
+}

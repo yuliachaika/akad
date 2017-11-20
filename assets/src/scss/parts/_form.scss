@@ -1,0 +1,70 @@
+.form	{
+	margin-bottom: rem(24); 
+	padding: rem(50) 0; 
+	width: 100%;
+	background-color: $green;
+	&__wrapper {
+		padding: rem(20) rem(26) rem(20) rem(20); 
+		background-color: $white; 
+	}
+	&__item {
+		width: 100%; 
+	}
+	&__text {
+		margin: 0;
+		padding-bottom: rem(30);  
+		@include title(30);
+		color: $white; 
+	}
+	&__title {
+		padding-right: rem(15); 
+		color: $gray; 
+		font-family: 'Montserrat', sans-serif;
+		font-size: rem(24);
+		font-weight: 700;
+		line-height: rem(36);
+		text-transform: uppercase;
+	}
+	&__info {
+		color: $dark;
+		font-family: 'Open Sans', sans-serif;
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: rem(24);
+	}
+	&__input {
+		padding: 0 rem(20); 
+		@include title(12);
+		&--color {
+			background-color: $input;
+		}
+		&--left {
+			border-right-color: transparent;
+		} 
+		&:hover {
+			border-color: $green;
+		}
+		&::placeholder {
+			color: $placeholder;
+		}
+	}
+	&__area {
+		padding: 0 rem(20) rem(8) rem(20); 
+		@include title(12);
+		background-color: $input;
+		resize: none;
+		&::placeholder {
+			color: $placeholder;
+		}
+		&:hover {
+			border-color: $green;
+		}
+	}
+	&__btn {
+		@include btn();
+		&--white {
+			margin-bottom: rem(20); 
+			@include btn-white();
+		}
+	}
+}
