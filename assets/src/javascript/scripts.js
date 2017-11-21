@@ -2,18 +2,6 @@
 ;
 (function($){
     						
-
-  window.addEventListener('load', function() {
-    var form = document.getElementById('needs-validation');
-    form.addEventListener('submit', function(event) {
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      form.classList.add('was-validated');
-    }, false);
-  }, false);
-
 /* ----map--- */
 
 function initMap() {
@@ -226,7 +214,16 @@ function initMap() {
 
 $(window).on('load', function () {
   initMap();
+    $('#needs-validation').on('submit', function(event) {
+      if (this.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      this.addClass('was-validated');
+    }, false);
+
 });
+
 
 /* ---map--- */
 
