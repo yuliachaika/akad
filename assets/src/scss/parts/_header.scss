@@ -45,5 +45,14 @@
 	}
 	&__text {
 		@include title(14);
+		transition: all .3s ease; 
+		&:hover {
+			color: #868e96;
+		}
+	}
+	&__breadcrumb {
+		background-color: transparent; 
 	}
 }
+
+
