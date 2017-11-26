@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 @import "parts/variables";
 @import "parts/normalize";
 @import "parts/mixins";
@@ -9,8 +11,7 @@
 @import "parts/team";
 @import "parts/slider";
 @import "parts/form";
+@import "parts/media";
 @import "parts/contacts";
 @import "parts/footer";
 
-@import "../../components/slick-carousel/slick/slick.scss";
-@import "../../components/slick-carousel/slick/slick-theme.scss";

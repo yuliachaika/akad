@@ -6,6 +6,11 @@
 	background-attachment: fixed;
 	position: relative;
 	z-index: 1;
+	&__container {
+		@extend .d-flex;
+		@extend .flex-column;
+		@extend .justify-content-between;
+	}
 	&::before {
 		content: "";
     display: block;
@@ -19,6 +24,8 @@
     z-index: -1;
 	}
 	&__nav {
+		@extend .navbar;
+		@extend .navbar-dark;
 		padding-left: 0; 
 		padding-right: 0; 
 	}
@@ -45,13 +52,25 @@
 	}
 	&__text {
 		@include title(14);
-		transition: all .3s ease; 
+		transition: all .3s ease;
 		&:hover {
 			color: #868e96;
 		}
 	}
-	&__breadcrumb {
-		background-color: transparent; 
+	&__info {
+		@extend .d-flex;
+		@extend .flex-column;
+		@extend .justify-content-center;
+		@extend .align-items-center;
+	}
+	&-breadcrumb {
+		@extend .breadcrumb;
+		padding-top: 0; 
+		background-color: transparent;
+		&__item {
+			@extend .breadcrumb-item;
+			@extend .hero__text;
+		} 
 	}
 }
 
