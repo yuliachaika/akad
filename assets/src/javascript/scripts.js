@@ -1,7 +1,19 @@
 'use strict';
 ;
 (function($){
-    						
+
+  
+$(document).ready( function() {
+        $('.sidebar-nav__link').on('click', function(e) {
+          e.preventDefault();
+          var element = $(this);
+          var href = $($(this).attr('href')); 
+          element.addClass('sidebar-nav__link--active').siblings().removeClass('sidebar-nav__link--active');
+          $('.sidebar-nav__tab').not(href).removeClass('sidebar-nav__tab--active'); 
+          href.addClass('sidebar-nav__tab--active'); 
+        });
+      });   
+
 /* ----map--- */
 
 function initMap() {
