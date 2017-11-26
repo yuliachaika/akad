@@ -30,6 +30,7 @@
 	}
 	&-nav {
 		list-style: none;
+		padding-left: 0; 
     @extend .d-flex;
     flex-wrap: wrap;
     @include media-breakpoint-up(sm) {
