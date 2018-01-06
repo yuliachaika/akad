@@ -1,7 +1,13 @@
 .team {
-	padding: rem(138) 0 0; 
+	padding: rem(60) 0 0;
+	@include media-breakpoint-up(md) {
+		padding: rem(138) 0 0;  
+	} 
 	&__header {
-		padding-bottom: rem(100); 
+		padding-bottom: rem(50);
+		@include media-breakpoint-up(md) {
+			padding-bottom: rem(100); 
+		}  
 	}
 	&__title {
 		@include title-shadow();
@@ -9,16 +15,27 @@
 	&__text {
 		margin: 0; 
 		@include text(24);
-		}
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	&__item {
-		margin-bottom: rem(30);
-    position: relative;
-    overflow: hidden;
-    transition: all .3s ease; 
-    &:hover {
-    	cursor: pointer;
-    	opacity: .7;  
-    }
+		padding-bottom: rem(30);  
+		position: relative;
+		overflow: hidden;
+		transition: all .3s ease; 
+		&:hover {
+			cursor: pointer;
+			opacity: .7;  
+		}
+	}
+	&__img	{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;  
 	}
 }
 
