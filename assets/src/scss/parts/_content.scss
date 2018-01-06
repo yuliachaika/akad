@@ -1,7 +1,19 @@
 .about { 
-	padding: rem(138) 0 0; 
+	padding: rem(50) 0 0;
+	@include media-breakpoint-up(md) {
+		padding: rem(138) 0 0;
+	} 
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		@include media-breakpoint-up(md) {
+			align-items: start;
+		}     
+	}  
 	&__title {
-		@include title-shadow();
+		@include title-shadow(); 
 	}
 	&__subtitle {
 		padding-bottom: rem(10); 
@@ -14,17 +26,24 @@
 	}
 	&__text { 
 		@include text(30);
+		text-align: justify;
+		@include media-breakpoint-up(md) {
+			text-align: left;
+		} 
 	}
 }
 
 .benefits {
-	padding: rem(138) 0 0; 
+	padding: rem(50) 0 0;
+	@include media-breakpoint-up(md) {
+		padding: rem(138) 0 0;
+	}    
 	&__title {
 		@include title-shadow();
 	}
 	&__text {
-			@include text(24);
-		}
+		@include text(24);
+	}
 	&-item {
 		padding-top: rem(80);  
 		&__header {

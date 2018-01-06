@@ -9,7 +9,10 @@
 	text-transform: uppercase;
 }
 @mixin title-shadow() { 
-	@include title(30);
+	@include title(26);
+	@include media-breakpoint-up(md) {
+	  @include title(30); 
+	}
 	display: inline-block;
 	position: relative;
 	z-index: 1; 
@@ -19,7 +22,7 @@
 		display: block;
 		width: rem(68);
 		height: rem(21);
-		bottom: rem(4);
+		top: rem(23);
 		background-color: $green;
 		z-index: -1;  
 	}

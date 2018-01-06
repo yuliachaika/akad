@@ -33,17 +33,25 @@
 		padding-left: 0; 
     @extend .d-flex;
     flex-wrap: wrap;
-    @include media-breakpoint-up(sm) {
-	     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+			flex-direction: row;
+	    // justify-content: center;
 	  }
     @include media-breakpoint-up(lg) {
 	    justify-content: start; 
 	  }
 	}
 	&-item {
-		padding: 0 rem(16); 
+		padding: 0 rem(8); 
+		@include media-breakpoint-up(lg) {
+			padding: 0 rem(16);
+		}
 		&:first-child {
-			padding-left: 0; 
+			@include media-breakpoint-up(md) {
+				padding-left: 0; 
+			}
 		}
 		&__link {
 			padding: 0; 
@@ -85,15 +93,17 @@
 		@include text(48);
 		text-transform: uppercase;
 		color: $light-gray;
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			text-align: right;
+		}
 	}
 	&-social {
 		list-style: none;
 		padding-left: 0;
 		@extend .d-flex;
-		@include media-breakpoint-up(sm) {
-	     justify-content: center;
-	  }
-    @include media-breakpoint-up(lg) {
+	  justify-content: center;
+    @include media-breakpoint-up(md) {
 	    justify-content: flex-end; 
 	  }
 		&__item{
